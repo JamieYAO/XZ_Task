@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>MY</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+	<style type="text/css">
+
+*{
+	margin:0;
+	padding:0;
+}	
+@media screen and (max-width: 480px){
+	body{
+		font-size: 60%;
+	}
+}
+html,body{
+	overflow: hidden;
+	height:100%;	
+}
+a{
+	text-decoration: none;
+	color:#555;
+}
+
+.container{
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+}	
+.container input:checked + a:after{
+	content:"";
+	width:0;
+	height:0;
+	overflow: hidden;
+	border:20px solid transparent;
+	border-bottom-color:#B51D4E;
+	position:absolute;
+	bottom:100%;
+	left:50%;
+	margin-left:-20px;
+}
+.container >a,input{
+	width:20%;
+	line-height: 34px;
+	position:fixed;
+	bottom:0;
+}
+ input{
+	opacity:0;
+	z-index: 1000;
+	height:34px;
+}
+
+.container > a{
+	z-index: 10;
+	font-weight: 700;
+	font-size: 16px;
+	background-color: #F30B56;
+	color:#fff;
+	text-shadow:1px 1px 1px rgba(151,24,64,0.5);
+	text-align:center;
+}
+#conter-1,#conter-1 + a{
+	left:0%;
+}
+#conter-2,#conter-2 + a{
+	left:20%;
+}
+#conter-3,#conter-3 + a{
+	left:40%;
+}
+#conter-4,#conter-4 + a{
+	left:60%;
+}
+#conter-5,#conter-5 + a{
+	left:80%;
+}
+ input:checked + a,
+ input:checked:hover + a{
+	background:#B51D4E;
+}
+ input:hover + a{
+	background:#AD244F;
+}
+.scroll,.panel{
+	position: relative;
+	width:100%;
+	height:100%;
+}
+.panel{
+	background: #fff;
+	overflow: hidden;
+}
+.pColor{
+	background: #920C37;
+}
+.scroll{
+	left:0;
+	top:0;
+	-webkit-transform:translate3d(0,0,0);
+	-moz-transform:translate3d(0,0,0);
+	-ms-transform:translate3d(0,0,0);
+	-o-transform:translate3d(0,0,0);
+	transform:translate3d(0,0,0);
+	-webkit-backface-visibility:hidden;
+	-moz-backface-visibility:hidden;
+	-ms-backface-visibility:hidden;
+	-o-backface-visibility:hidden;
+	backface-visibility:hidden;
+	-webkit-transition:all 1s ease-in-out;
+	-moz-transition:all 1s ease-in-out;
+	-ms-transition:all 1s ease-in-out;
+	-o-transition:all 1s ease-in-out;
+	transition:all 1s ease-in-out;
+}
+
+
+.desc{
+	width:19.532%;
+	padding-bottom: 19.532%;
+	background-color: #920C37;
+	-webkit-transform:translateY(-50%) rotateZ(45deg); 
+	-moz-transform:translateY(-50%) rotateZ(45deg); 
+	-ms-transform:translateY(-50%) rotateZ(45deg); 
+	-o-transform:translateY(-50%) rotateZ(45deg); 
+	transform:translateY(-50%) rotateZ(45deg); 
+	position:absolute;
+	left:50%;
+	margin-left: -9.766%;
+	top:0;
+}
+.pColor .desc{
+	background-color: #fff;
+}
+
+.box{
+	-webkit-transition:all 1s ease-out 0.5s ;
+	-moz-transition:all 1s ease-out 0.5s ;
+	-ms-transition:all 1s ease-out 0.5s ;
+	-o-transition:all 1s ease-out 0.5s ;
+	transition:all 1s ease-out 0.5s ;
+	opacity:0;
+}
+.box.active{
+	-webkit-transform:translateY(-50px);
+	-moz-transform:translateY(-50px);
+	-ms-transform:translateY(-50px);
+	-o-transform:translateY(-50px);
+	transform:translateY(-50px);
+    opacity: 1 ;
+}
+.box-b{
+	border:1px solid #fff;
+	box-shadow: 1px 1px 1px rgba(155,24,64,0.5);
+	width: 50%;
+	height:50%;
+	margin: 15% auto;
+}
+section .box-b a{	
+	text-align: center;
+	display: block;
+	margin:40%;
+	font-size: 2em;
+}
+.box-a{
+	box-shadow: 1px 1px 1px #555;
+	border:1px solid #920C37;
+	width: 50%;
+	height:50%;
+	margin: 15% auto;
+
+}
+section .box-a a{
+	text-align: center;
+	display: block;
+	margin:40%;
+	font-size: 2em;
+	color:;
+}
+
+
+#content{
+	width:300px;
+	background:rgba(0,0,0,.5);
+	border-radius:16px;
+	overflow: hidden;
+	height:60px;
+}
+#content li {
+   margin-top:30px;
+   font-size: 30px;
+   border-radius: 10px;
+   background:rgba(0,0,0,.6);
+   color:#fff;
+   display: block;text-align: center;
+}
+#content ul{
+	margin-top:90px;
+}
+#content h1 {
+	text-align: center;
+}
+#content li:hover{
+	color:black;
+	background:#fff;
+}
+#content li:hover a{
+	color:black;
+	text-shadow:2px 3px 2px #000;
+	background:#fff;
+}
+#content a {
+	border-radius: 1.5em;
+
+}
+#cha {
+	background-color: rgba(0,0,0,0.5);
+	color:#fff;
+	font-size: 30px;
+	width:300px;
+	height: 60px;
+    border-radius: 10px;
+	line-height: 60px;
+	display: inline-block;
+	text-align: center;
+	position:absolute;
+	cursor: pointer;
+	-webkit-transition:all 3s;
+	-moz-transition:all 3s;
+	-ms-transition:all 3s;
+	-o-transition:all 3s;
+	-webkit-transition:all 3s;
+}
+#cha span{
+	display: block;
+	float:left;
+	position:relative;
+	left:12px;
+	-webkit-transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	-ms-transition:all 0.5s;
+	-o-transition:all 0.5s;
+	-webkit-transition:all 0.5s;
+}
+.move{
+	-webkit-transform:translateX(30px);
+	-moz-transform:translateX(30px);
+	-ms-transform:translateX(30px);
+	-o-transform:translateX(30px);
+	transform:translateX(30px);
+}
+#cha:hover{
+/*   -webkit-transform:rotateY(360deg); */
+   	color:black;
+	text-shadow:2px 3px 2px #000;
+	background:#fff;
+}
+
+	</style>
+</head>
+<body>
+		<div class="container">
+
+				<!-- nav begin -->
+				<input type="radio" name="radio" id="conter-1" calss="qq1" checked="checked" >
+				<a href="#panel-1" >TASK1</a>
+				<input type="radio" name="radio" id="conter-2" calss="qq1">
+				<a href="#panel-2" >TASK2</a>
+				<input type="radio" name="radio" id="conter-3" calss="qq1">
+				<a href="#panel-3" >TASK3</a>
+				<input type="radio" name="radio" id="conter-4" calss="qq1">
+				<a href="#panel-4" >TASK4</a>
+				<input type="radio" name="radio" id="conter-5" calss="qq1">
+				<a href="#panel-5" >TASK5</a>
+				<!-- nav end -->
+
+				<div class="scroll">
+					<section class="panel" id="panel-1">
+					<div id="content">
+						  <div id="cha">
+						  	<p><span class="">&raquo;</span>我的学习过程</p>
+						  </div>	
+						  <ul>
+								<li><a href="task6.html">Task6</a></li>
+								<li><a href="task7.html">Task7</a></li>
+								<li><a href="task8.html">Task8</a></li>
+								<li><a href="task9.html">Task9</a></li>
+								<li><a href="JStask1.html">JSTask1</a></li>
+						  </ul>
+					</div>
+
+
+<!-- 						<a href="task6.html" class=" box active">TASK6</a>
+						<a href="task7.html" class=" box active">TASK7</a> -->
+						<div class="desc" data="data-icon"></div>
+						<!-- <div class="box-b"><a href="task1.html" class=" box active">TASK1</a>
+						</div> -->
+					</section>
+					<section class="panel pColor" id="panel-2">
+						<div class="desc"></div>
+						<div class="box-a"><a href="task2.html" class=" box">TASK2</a></div>
+					</section>
+					<section class="panel" id="panel-3">
+						<div class="desc"></div>
+						<div class="box-b"><a href="task3.html" class=" box">TASK3</a></div>
+					</section>
+					<section class="panel pColor" id="panel-4">
+						<div class="desc"></div>
+						<div class="box-a"><a href="task4.html" class=" box">TASK4</a></div>
+					</section>
+					<section class="panel" id="panel-5">
+						<div class="desc"></div>
+						<div class="box-b"><a href="task5.html" class=" box">TASK5</a></div>
+					</section>
+				</div>
+		</div>
+
+		<script type="text/javascript">
+	$("#conter-1").on("click",function(){
+		$("section a").removeClass("active");
+		$("#panel-1 a").addClass("active");
+		$(".scroll").css("transform","translateY(0)");
+	});
+	$("#conter-2").on("click",function(){
+		$("section a").removeClass("active");
+		$("#panel-2 a").addClass("active");
+		$(".scroll").css("transform","translateY(-100%)");
+	});
+	$("#conter-3").on("click",function(){
+		$("section a").removeClass("active");
+		$("#panel-3 a").addClass("active");
+		$(".scroll").css("transform","translateY(-200%)");
+	});
+	$("#conter-4").on("click",function(){
+		$("section a").removeClass("active");
+		$("#panel-4 a").addClass("active");
+		$(".scroll").css("transform","translateY(-300%)");
+	});
+	$("#conter-5").on("click",function(){
+		$("section a").removeClass("active");
+		$("#panel-5 a").addClass("active");
+		$(".scroll").css("transform","translateY(-400%)");
+	});
+
+
+	var f = false ;
+    $('#cha').on('click',function(){
+    	if(f = !f){
+    	$('#content').animate({height:420},{duration:1000,specialEasing: {
+      height: 'easeOutBounce'
+    }})
+    }else{$('#content').animate({height:60},{duration:1000,specialEasing:{
+    	height:'easeOutBounce'
+    }})}
+
+    })
+
+function runCha(){
+    $('#cha span').attr('class')=='move'?$('#cha span').removeClass():$('#cha span').addClass('move');  
+}
+setInterval('runCha()',300);
+
+
+		</script>
+</body>
+</html>
