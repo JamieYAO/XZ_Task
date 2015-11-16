@@ -113,5 +113,22 @@
 - 使用Sublime完成
 
 ##Javascript
+- 学会基本控件的操作，包括轮播图，弹框，下拉选择框，定时任务等。
+- 学会和服务器端的交互，RestFul风格的接口，Json解析，跨域解决方案，常见的注册登录，列表等。
+- 学会使用AngularJS来和服务器端交互，Factory，Service，指令，过滤器等。
+- 学会自定义接口，RequireJS，GruntJS，富文本编辑器等。
+- 学会QQ登录，微信登录，WebSocket，Manifest，LocalStorage，Phonegap等
 
 [JSTask1](http://jamieyao.github.io/XZ_Task/JStask1.html)
+
+###### 成果
+- 每格一秒变换一次颜色，每次只有一个格子随机变换，变换的颜色是红绿蓝三种随机的颜色
+- console.log 可以随着每次随机数的变化，打印出以下日志 “格子 1 ” 变成了 “红色”
+- 使用Chrome的F12，查看Source，并设置断点，查看代码运行情况
+- JS文件单独引入，并且加上版本号，以防止每次修改之后浏览器出现缓存导致代码并不能更新
+
+###### 收获
+- 定时器
+- JS基本语法
+- ID和Class的区别
+- F12Console的用法，以及如何Debug程序。
