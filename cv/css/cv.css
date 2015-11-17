@@ -1,0 +1,395 @@
+@CHARSET "ISO-8859-1";
+/* Reset CSS
+ * --------------------------------------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+a{
+	text-decoration:none;
+}
+table {
+    border-spacing: 0;
+}
+fieldset,img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+strong{
+	font-weight: bold;
+}
+ol,ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+caption,th {
+    text-align: left;
+
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-size: 100%;
+    margin:0;
+    padding:0;
+    color:#f2f2f2;
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { border: 0;
+}
+
+/* Custom CSS
+ * --------------------------------------- */
+html, body, .warp{
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+    font-family: "微软雅黑"
+}
+body{
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	color: #f2f2f2;
+}
+h1{
+	font-size: 8vmin;
+}
+p{
+	font-size: 5vmin;
+}
+.section{
+	text-align: center;
+}
+
+
+/* Section 1
+ * --------------------------------------- */
+#section1 h1{
+	color: #fff;
+}
+#section1 p{
+	color: #333;
+	color: rgba(0,0,0,0.3);
+}
+#section1 a,.pages-1 #phone{
+    text-decoration: none;
+    font-size: 1.5em;
+    color:#999;
+    display: block;
+    font-weight: normal;
+    margin-top:10px;
+    
+}
+#section1 a{
+    display: inline-block;
+    font-size: 5vmin;
+}
+#section1 a:hover{
+    color:#fff;
+}
+#section1 img{
+    width:100%;
+}
+#section1 .intro img{
+    width:20%;
+    border:5px solid #999;
+    border-radius: 50%;
+    margin:0 auto;
+    overflow: hidden;
+    background: #fff;
+    opacity: 1;
+}
+div#logo {
+    width: 100%;
+}
+.intro{
+    position:relative;
+/*  left:0%;*/
+    text-align: center;
+}
+.intro h1{
+    font-size:7vmin;
+}
+#section1 .intro p{
+    width:100%;
+}
+#section1 #phone {
+    color:#fff;
+    font-size: 5vmin;
+}
+.intro p a{
+    color:#fff;
+}
+
+.fontMove{
+    display: none;
+}
+
+.topMove{
+    animation:topMove 3s cubic-bezier(0.57, -0.06, 0.24, 1.34);
+    -webkit-animation:topMove 3s cubic-bezier(0.57, -0.06, 0.24, 1.34);
+    -moz-animation:topMove 3s cubic-bezier(0.57, -0.06, 0.24, 1.34);
+    -o-animation:topMove 3s cubic-bezier(0.57, -0.06, 0.24, 1.34);
+    
+}
+.topFont{
+    animation:topFont 3s ease-in ;
+}
+@keyframes topMove{
+    from {left:-100%;}
+    to {left:0%; }
+}
+@-webkit-keyframes topMove{
+    from {left:-100%;}
+    to {left:0%; }
+}
+@-moz-keyframes topMove{
+    from {left:-100%;}
+    to {left:0%; }
+}
+@-o-keyframes topMove{
+    from {left:-100%;}
+    to {left:0%; }
+}
+@keyframes topFont{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+@-webkit-keyframes topFont{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+@-mozkeyframes topFont{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+@-o-keyframes topFont{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+
+
+/* Section 2
+ * --------------------------------------- */
+#section2 h1,
+#section2 p{
+	z-index: 3;
+}
+#section2 p{
+	opacity: 0.8;
+}
+#pagepiling #section2 span{
+    text-align: left;
+    font-size: 4vmin;
+}
+#section2 ul{
+    width: 75%;
+    margin: 0 auto;
+}
+
+.box{
+    padding-bottom: 5%;
+    background-color: orange;
+    border-radius: 5px;
+    opacity:0;
+}
+#htmlBox{
+    width:70%;  
+}
+#cssBox{
+    width:67%;  
+}
+#jsBox{
+    width:40%;  
+}
+#jqBox{
+    width:36%;  
+}
+#bBox{
+    width:22%;  
+}
+#aBox{
+    width:20%;  
+}
+
+.animation0{
+    animation:box1Move 3s cubic-bezier(0.57, -0.06, 0.24, 1.34);
+    -webkit-animation:box1Move 3s cubic-bezier(0.57, -0.06, 0.24, 1.34);
+    -moz-animation:box1Move 3s cubic-bezier(0.57, -0.06, 0.24, 1.34);
+    -o-animation:box1Move 3s cubic-bezier(0.57, -0.06, 0.24, 1.34);
+}
+.animation1{
+    animation:box2Move 3.5s cubic-bezier(0.57, -0.06, 0.24, 1.34);
+    -webkit-animation:box2Move 3.5s cubic-bezier(0.57, -0.06, 0.24, 1.34);
+    -moz-animation:box2Move 3.5s cubic-bezier(0.57, -0.06, 0.24, 1.34);
+    -o-animation:box2Move 3.5s cubic-bezier(0.57, -0.06, 0.24, 1.34);
+}
+.animation2{
+    animation:box3Move 1.5s cubic-bezier(0.57, -0.06, 0.24, 1.34);
+    -webkit-animation:box3Move 1.5s cubic-bezier(0.57, -0.06, 0.24, 1.34);
+    -moz-animation:box3Move 1.5s cubic-bezier(0.57, -0.06, 0.24, 1.34);
+    -o-animation:box3Move 1.5s cubic-bezier(0.57, -0.06, 0.24, 1.34);
+}
+.animation3{
+    animation:box4Move 2.9s cubic-bezier(0.57, -0.06, 0.24, 1.34);
+    -webkit-animation:box4Move 2.9s cubic-bezier(0.57, -0.06, 0.24, 1.34);
+    -moz-animation:box4Move 2.9s cubic-bezier(0.57, -0.06, 0.24, 1.34);
+    -o-animation:box4Move 2.9s cubic-bezier(0.57, -0.06, 0.24, 1.34);
+}
+.animation4{
+    animation:box5Move 2s cubic-bezier(0.57, -0.06, 0.24, 1.34);
+    -webkit-animation:box5Move 2s cubic-bezier(0.57, -0.06, 0.24, 1.34);
+    -moz-animation:box5Move 2s cubic-bezier(0.57, -0.06, 0.24, 1.34);
+    -o-animation:box5Move 2s cubic-bezier(0.57, -0.06, 0.24, 1.34);
+}
+.animation5{
+    animation:box6Move 3s cubic-bezier(0.57, -0.06, 0.24, 1.34);
+    -webkit-animation:box6Move 3s cubic-bezier(0.57, -0.06, 0.24, 1.34);
+    -moz-animation:box6Move 3s cubic-bezier(0.57, -0.06, 0.24, 1.34);
+    -o-animation:box6Move 3s cubic-bezier(0.57, -0.06, 0.24, 1.34);
+}
+
+@keyframes box1Move{
+    from{width:0px;opacity: 0;}
+    to{width:70%;opacity: 1;}
+}
+@-webkit-keyframes box1Move{
+    from{width:0px;opacity: 0;}
+    to{width:70%;opacity: 1;}
+}
+@-moz-keyframes box1Move{
+    from{width:0px;opacity: 0;}
+    to{width:70%;opacity: 1;}
+}
+@-o-keyframes box1Move{
+    from{width:0px;opacity: 0;}
+    to{width:70%;opacity: 1;}
+}
+
+@keyframes box2Move{
+    from{width:0px;opacity: 0;}
+    to{width:67%px;opacity: 1;}
+}
+@-o-keyframes box2Move{
+    from{width:0px;opacity: 0;}
+    to{width:67%px;opacity: 1;}
+}
+@-moz-keyframes box2Move{
+    from{width:0px;opacity: 0;}
+    to{width:67%px;opacity: 1;}
+}
+@-webkit-keyframes box2Move{
+    from{width:0px;opacity: 0;}
+    to{width:67%px;opacity: 1;}
+}
+
+@keyframes box3Move{
+    from{width:0px;opacity: 0;}
+    to{width:40%;opacity: 1;}
+}
+@-webkit-keyframes box3Move{
+    from{width:0px;opacity: 0;}
+    to{width:40%;opacity: 1;}
+}
+@-moz-keyframes box3Move{
+    from{width:0px;opacity: 0;}
+    to{width:40%;opacity: 1;}
+}
+@-o-keyframes box3Move{
+    from{width:0px;opacity: 0;}
+    to{width:40%;opacity: 1;}
+}
+
+
+@keyframes box4Move{
+    from{width:0px;opacity: 0;}
+    to{width:36%;opacity: 1;}
+}
+@-webkit-keyframes box4Move{
+    from{width:0px;opacity: 0;}
+    to{width:36%;opacity: 1;}
+}
+@-o-keyframes box4Move{
+    from{width:0px;opacity: 0;}
+    to{width:36%;opacity: 1;}
+}
+@-moz-keyframes box4Move{
+    from{width:0px;opacity: 0;}
+    to{width:36%;opacity: 1;}
+}
+
+@keyframes box5Move{
+    from{width:0px;opacity: 0;}
+    to{width:22%;opacity: 1;}
+}
+@-webkit-keyframes box5Move{
+    from{width:0px;opacity: 0;}
+    to{width:22%;opacity: 1;}
+}
+@-moz-keyframes box5Move{
+    from{width:0px;opacity: 0;}
+    to{width:22%;opacity: 1;}
+}
+@-o-keyframes box5Move{
+    from{width:0px;opacity: 0;}
+    to{width:22%;opacity: 1;}
+}
+
+@keyframes box6Move{
+    from{width:0px;opacity: 0;}
+    to{width:20%;opacity: 1;}
+}
+@-webkit-keyframes box6Move{
+    from{width:0px;opacity: 0;}
+    to{width:20%;opacity: 1;}
+}
+@-o-keyframes box6Move{
+    from{width:0px;opacity: 0;}
+    to{width:20%;opacity: 1;}
+}
+@-moz-keyframes box6Move{
+    from{width:0px;opacity: 0;}
+    to{width:20%;opacity: 1;}
+}
+
+/* Section 3
+ * --------------------------------------- */
+ #section3 .intro a { 
+    width: 32px;
+    height: 30px;
+    display: inline-block;
+    border-radius: 50%;
+    transition:all .8s;
+    -webkit-transition:all .8s;
+    margin-top: 10%;
+    margin-left: 5px;
+}
+#section3 .intro #gh{
+    background: url(../img/hb.png) no-repeat center;
+        background-color: #999;
+}
+#section3 .intro #wb{
+    background: url(../img/wb.png) no-repeat center;
+     background-color: #999;
+}
+#section3 .intro #qq{
+    background: url(../img/qq.png) no-repeat center/78%;
+     background-color: #999;
+}
+#section3 .intro a#gh:hover,#section3 .intro a#wb:hover,#section3 .intro a#qq:hover{
+    border-radius: 10%;
+    background-color: #565656;
+}
+#section3 .intro{
+    left:-100%;
+}
+#section3 .intro span{
+    display: block;
+    margin-top: 3%;
+}

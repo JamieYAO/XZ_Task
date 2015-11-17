@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<style type="text/css">
+*{
+	margin:0;
+	padding:0;
+	font-family: "Microsoft YaHei"
+}
+@media screen and (max-width: 480px){
+	body{
+		font-size: 60%;
+	}
+	
+}
+@media screen and (max-width: 700px){
+	#dianji{
+		display: none;
+	}
+}
+a{
+	text-decoration: none;
+	color:#fff;
+}
+ul li{
+	list-style: none;
+}
+
+
+#wrap{
+	max-width: 640px;
+	width:100%;
+	background:#29bde0;
+	margin:0 auto;
+/*	padding-bottom:134.375%;*/
+}
+
+.header{
+	width:100%;
+}
+.header a img{
+	width:100%;
+}
+.header .more{
+	width:6.25%;
+	float:left;
+	padding:2.5% 0 0 2.5%;
+}
+.header .close{
+	width:6.25%;
+	float:right;
+	padding:2.5% 2.5% 0 0;
+}
+.header p{
+	text-align: center;
+	line-height: 2.25;
+	font-size: 2em;
+	color:#fff;
+}
+.tip{
+		background: #b9e9f5;
+}
+.tip span{
+	font-size: 1.6875em;
+	line-height: 3.074;
+	padding-left:7.8125%;
+	color:#464646;
+}
+.tip img{
+	float:right;
+	width:8.125%;
+	padding:2.34375% 2.8125% 4.0625% 0;
+	cursor:pointer;
+}
+.tip p{
+	background: #29bde0;
+	font-size: 1.5em;
+	line-height:3;
+	color:#fff;
+	padding-left: 11.5625%;
+}
+.tip p:before{
+	content: "";
+	position:absolute;
+	border:14px solid transparent;
+	border-top:14px solid #b9e9f5;
+	z-index: 9;
+}
+
+.person{
+	float:left;
+	width:21.4%;
+	padding:0 5.77%;
+}
+.box{
+	border:5px solid #fff;
+	cursor:pointer;
+}
+.person:hover  .list{opacity:1;}
+.box p{
+	font-size: 1.6875em;
+	line-height: 3.7037;
+	text-align: center;
+	background: #f5c97b;
+	color:#565656;
+}
+.box h6{
+	font-weight: normal;
+	font-size: 1.375em;
+	line-height: 1;
+	text-align: center;
+	background: #83b09a;
+	color:#fff;
+}
+.person .list ul li{
+	float:left;
+	padding:16.1538% 1.5%;
+	cursor:pointer;
+}
+.person .list ul li{
+	width:21.408%;
+}
+.person .list ul li img{
+	width:100%;
+}
+.person .list ul li:hover{
+	opacity:.3;
+}
+footer{
+	max-width: 640px;
+	width:100%;
+	position:fixed;
+	bottom:0;
+	background: #29bde0;
+}
+footer a{
+	font-size: 2.3em;
+	line-height: 1.7;
+	display: block;
+	text-align: center;
+	background: #fbb435;
+	margin:3% 20%;
+}
+.list{
+	opacity:0;
+}
+video{
+	display: none;
+}
+
+.clearfix:after{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.content{
+	padding-bottom: 15.5%;
+}
+#dianji{
+	margin-top: -55px;
+	margin-left: 640px;
+	position:absolute;
+	font-size: 1em;
+}
+#dianji:before{
+	content: "";
+    position: absolute;
+    border: 14px solid transparent;
+    border-right: 14px solid #69DCF9;
+    z-index: 9;
+    left: -30px;
+}
+
+
+</style>
+
+
+
+	<title>Task6</title>
+</head>
+<body>
+	<div id="wrap">
+		<div class="header">
+			<a href="" class="more"><img src="task6Images/more.png" alt=""></a>
+			<a href="" class="close"><img src="task6Images/close.png" alt=""></a>
+			<p>投票</p>
+		</div>
+		<div class="tip ">
+			<span>发言讨论结束，大家请投票</span><h1 id="dianji">点这个有音乐噢</h1>
+			<img id="musie"  src="task6Images/musie.png" alt="">
+			<p>点击的票数最多人的头像</p>
+		</div>
+		<div class="content clearfix">
+			<div class="person">
+				<div class="box">
+					<p>水民</p>
+					<h6>1号</h6>
+				</div>
+				<div class="list active">
+					<ul>
+						<li><img src="task6Images/knife.png" alt=""></li>
+						<li><img src="task6Images/seach.png" alt=""></li>
+						<li><img src="task6Images/shot.png" alt=""></li>
+						<li><img src="task6Images/pul.png" alt=""></li>
+					</ul>
+				</div>
+		    </div>
+		    <div class="person">
+				<div class="box">
+					<p>水民</p>
+					<h6>1号</h6>
+				</div>
+				<div class="list">
+					<ul>
+						<li><img src="task6Images/knife.png" alt=""></li>
+						<li><img src="task6Images/seach.png" alt=""></li>
+						<li><img src="task6Images/shot.png" alt=""></li>
+						<li><img src="task6Images/pul.png" alt=""></li>
+					</ul>
+				</div>
+		    </div>
+		    <div class="person">
+				<div class="box">
+					<p>水民</p>
+					<h6>1号</h6>
+				</div>
+				<div class="list">
+					<ul>
+						<li><img src="task6Images/knife.png" alt=""></li>
+						<li><img src="task6Images/seach.png" alt=""></li>
+						<li><img src="task6Images/shot.png" alt=""></li>
+						<li><img src="task6Images/pul.png" alt=""></li>
+					</ul>
+				</div>
+		    </div>
+		    <div class="person">
+				<div class="box">
+					<p>水民</p>
+					<h6>1号</h6>
+				</div>
+				<div class="list">
+					<ul>
+						<li><img src="task6Images/knife.png" alt=""></li>
+						<li><img src="task6Images/seach.png" alt=""></li>
+						<li><img src="task6Images/shot.png" alt=""></li>
+						<li><img src="task6Images/pul.png" alt=""></li>
+					</ul>
+				</div>
+		    </div>
+		    <div class="person">
+				<div class="box">
+					<p>水水</p>
+					<h6>1号</h6>
+				</div>
+				<div class="list">
+					<ul>
+						<li><img src="task6Images/knife.png" alt=""></li>
+						<li><img src="task6Images/seach.png" alt=""></li>
+						<li><img src="task6Images/shot.png" alt=""></li>
+						<li><img src="task6Images/pul.png" alt=""></li>
+					</ul>
+				</div>
+		    </div>
+		    <div class="person">
+				<div class="box">
+					<p>水民</p>
+					<h6>1号</h6>
+				</div>
+				<div class="list">
+					<ul>
+						<li><img src="task6Images/knife.png" alt=""></li>
+						<li><img src="task6Images/seach.png" alt=""></li>
+						<li><img src="task6Images/shot.png" alt=""></li>
+						<li><img src="task6Images/pul.png" alt=""></li>
+					</ul>
+				</div>
+		    </div>
+		    <div class="person">
+				<div class="box">
+					<p>水民</p>
+					<h6>1号</h6>
+				</div>
+				<div class="list">
+					<ul>
+						<li><img src="task6Images/knife.png" alt=""></li>
+						<li><img src="task6Images/seach.png" alt=""></li>
+						<li><img src="task6Images/shot.png" alt=""></li>
+						<li><img src="task6Images/pul.png" alt=""></li>
+					</ul>
+				</div>
+		    </div>
+		    <div class="person">
+				<div class="box">
+					<p>水民</p>
+					<h6>1号</h6>
+				</div>
+				<div class="list">
+					<ul>
+						<li><img src="task6Images/knife.png" alt=""></li>
+						<li><img src="task6Images/seach.png" alt=""></li>
+						<li><img src="task6Images/shot.png" alt=""></li>
+						<li><img src="task6Images/pul.png" alt=""></li>
+					</ul>
+				</div>
+		    </div>
+		    <div class="person">
+				<div class="box">
+					<p>水民</p>
+					<h6>1号</h6>
+				</div>
+				<div class="list">
+					<ul>
+						<li><img src="task6Images/knife.png" alt=""></li>
+						<li><img src="task6Images/seach.png" alt=""></li>
+						<li><img src="task6Images/shot.png" alt=""></li>
+						<li><img src="task6Images/pul.png" alt=""></li>
+					</ul>
+				</div>
+		    </div>
+		    <div class="person">
+				<div class="box">
+					<p>水民</p>
+					<h6>1号</h6>
+				</div>
+				<div class="list">
+					<ul>
+						<li><img src="task6Images/knife.png" alt=""></li>
+						<li><img src="task6Images/seach.png" alt=""></li>
+						<li><img src="task6Images/shot.png" alt=""></li>
+						<li><img src="task6Images/pul.png" alt=""></li>
+					</ul>
+				</div>
+		    </div>
+		    <div class="person">
+				<div class="box">
+					<p>水民</p>
+					<h6>1号</h6>
+				</div>
+				<div class="list">
+					<ul>
+						<li><img src="task6Images/knife.png" alt=""></li>
+						<li><img src="task6Images/seach.png" alt=""></li>
+						<li><img src="task6Images/shot.png" alt=""></li>
+						<li><img src="task6Images/pul.png" alt=""></li>
+					</ul>
+				</div>
+		    </div>
+		    <div class="person">
+				<div class="box">
+					<p>水民</p>
+					<h6>1号</h6>
+				</div>
+				<div class="list">
+					<ul>
+						<li><img src="task6Images/knife.png" alt=""></li>
+						<li><img src="task6Images/seach.png" alt=""></li>
+						<li><img src="task6Images/shot.png" alt=""></li>
+						<li><img src="task6Images/pul.png" alt=""></li>
+					</ul>
+				</div>
+		    </div>
+        </div>
+        <footer>
+        	<a href="">投死</a>
+        </footer>
+	</div>
+
+	<script type="text/javascript">
+
+ window.onload=function(){
+    var player=document.getElementById("musie");
+    var audio=new Audio("财富自由.mp3");
+    player.onclick=function(){     
+        if(audio.error){
+              alert(audio.error.code);
+        }
+        if(audio!==null){             
+            //检测播放是否已暂停.audio.paused 在播放器播放时返回false.在播放器暂停时返回true
+               
+            if(!audio.paused)  
+            {                 
+                audio.pause();// 这个就是暂停//audio.play();// 这个就是播放  
+            }else audio.play();  
+        }  
+    }           
+  };
+
+var dianji = document.getElementById("dianji");
+setInterval(function(){
+    var random = Math.random()*10;
+	dianji.style.transform = "translateX("+random+"px)";
+},60)
+
+	</script>
+</body>
+</html>

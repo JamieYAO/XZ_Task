@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Welcome to nginx!</title>
+  <style>
+h1{ 
+    color:#8a8a8a;
+    font-family: "Microsoft YaHei";
+}
+html{
+    height:100%;
+ 
+}
+body {
+    max-width:640px;
+    min-width:320px;
+    width: 100%;
+    height:100%;
+    margin: 0 auto;
+    font-family: Tahoma, Verdana, Arial, sans-serif;
+}
+.night{
+    width:31%;
+    padding-bottom:31%;
+    border-radius: 10%;
+    margin:1%;
+    background-color: #E8830D;
+    float:left;
+    box-shadow: 0 0 10px;
+}
+.group{
+    width:50%;
+    height:50%;
+    margin: auto;
+}
+
+.move-box{
+	position:relative;
+}
+.move-box a, #nothing{
+    text-decoration: none;
+    height:50px;
+    width: 50px;
+    background: #fff;
+    display: inline-block;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #848484;
+    text-align: center;
+    line-height: 50px;
+    transition:all 1s;
+    -webkit-transition:all 0.7s ease-out;
+    position:absolute;
+}
+#task3,#task4,#task5{
+    opacity: 0;
+}
+#nothing{
+	z-index: 999;
+	cursor:pointer;
+}
+.move-box a:hover, #nothing:hover{
+    transform:rotateZ(360deg);
+    -webkit-transform:rotate(360deg);
+}
+
+
+
+  </style>
+</head>
+<body>
+  <div class="group">
+    <div class="night"></div>
+    <div class="night"></div>
+    <div class="night"></div>
+    <div class="night"></div>
+    <div class="night"></div>
+    <div class="night"></div>
+    <div class="night"></div>
+    <div class="night"></div>
+    <div class="night"></div>
+  </div>
+  <div class="content">
+    <h1 id="click">我的任务：</h1>
+    <div class="move-box">
+        <div id="nothing" >#</div>
+        <a id="task3" href="task3.html">TASK3</a>
+        <a id="task4" href="task4.html">TASK4</a>
+        <a id="task5" href="task5.html">TASK5</a>
+    </div>
+  </div>
+
+
+  <script type="text/javascript">
+
+
+var nigth = document.getElementsByClassName('night');
+
+setInterval(function(){
+ for(var i=0; i<9 ;i++){
+ 	this.nigth[i].style.backgroundColor=getColor()
+ }
+},90)
+
+function getColor(){
+	var random = function(){
+		return Math.floor(Math.random()*255)
+	}
+	return "rgb("+random()+","+random()+","+random()+")";
+}
+
+
+
+function move(){
+	var myClick = document.getElementById("nothing");
+	var task3 = document.getElementById("task3");
+	var task4 = document.getElementById("task4");
+    var task5 = document.getElementById("task5");
+	var f = false;
+	myClick.onclick=function(){
+        if(f!=true){
+        	task4.style.opacity="1";
+        	task3.style.opacity="1";
+            task5.style.opacity="1";            
+            task3.style.marginLeft="100px";
+        	task4.style.marginLeft="200px";
+            task5.style.marginLeft="300px";
+        	f = true;
+        }else{
+        	task4.style.marginLeft="0";
+            task5.style.marginLeft="0";            
+        	task3.style.marginLeft="0";
+        	task4.style.opacity="0";
+            task5.style.opacity="0";            
+        	task3.style.opacity="0";        	
+        	f = false;
+        }
+		
+	}
+}
+move();
+
+  </script>
+</body>
+</html>

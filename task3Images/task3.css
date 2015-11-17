@@ -1,0 +1,125 @@
+*{
+	margin:0;
+	padding:0;
+	font-family: "微软雅黑";
+	text-decoration: none;
+	color:#fff;
+}
+img{
+	border:none;
+}
+body{
+	font-size: 100%;
+	color:#fff;
+}
+@media screen and (max-width: 480px){
+	body{
+		font-size: 60%;
+	}
+}
+.wrap {
+	width:100%;
+	max-width: 640px;
+	margin:0 auto;
+	background-color: #68cdd5;
+}
+
+.head-nav{
+	width:100%;
+	background-color: #22292c;
+	position:relative;
+}
+.back{
+	width:13.28%;
+	position:absolute;
+	top:20%;
+	left:2%;
+	font-size: 162.5%
+}
+.back a{
+	width:100%;
+	display: inline-block;
+	position:absolute;
+	top:10%;
+	left: 30%
+}
+.back img{
+	width: 23%;
+	max-width:20px;
+}
+.head-nav h1{
+	width:100%;
+	font-weight: normal;
+	font-size: 212.5%;
+	text-align: center;
+	padding:1.8% 0;
+}
+
+.more{
+	width:5%;
+	position: absolute;
+	top: 28%;
+	right:2%;
+}
+.more img{
+	width: 100%;
+	max-width: 37px;
+}
+.main {
+	widows: 100%;
+	position: relative;
+}
+.arrow{
+	width:8.5%;
+	padding-left:5.4%;
+	padding-top:1.25%;
+}
+.logo{
+	width: 28.2%;
+	display: block;
+	margin:0 auto;
+	padding-top: 7.8%;
+}
+.main p{
+	width:70.9%;
+	font-size: 187.5%;
+	margin:0 auto;
+	padding-top: 7.5%;
+}
+.content{
+	width: 100%;
+	padding-top: 7.5%;
+	position:relative;
+	background: #68cdd5;
+}
+.content p{
+	padding: 30% 0;
+	font-size: 150%;
+	text-align: center;
+}
+.contact {
+	width: 14%;
+    padding-left: 20%;
+    position: absolute;
+    left: 0;
+    top: 20%;
+}
+.contact img{
+	width: 100%;
+	max-width: 86px;
+}
+.ptteng {
+	width: 14%;
+    padding-right: 20%;
+    position: absolute;
+    right: 0;
+    top: 20%;
+}
+
+.ptteng img{
+	width:100%;
+	max-width: 86px;
+}
+span.word1 {
+    padding-right: 26%;
+}

@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Task8</title>
+	<style type="text/css">
+*{
+	margin:0;
+	padding: 0;
+}
+@media screen and (max-width: 480px){
+	html body{
+		font-size: 100%
+	}
+	header #top-list{
+	right: 0;
+    top: 0;
+    width: 250px;
+    z-index: 10;
+	}
+	header .top-side .connection ul li{
+	display: none;
+	}
+	header .top-nav #menu {
+    float: none; 
+    margin-right: 0; 
+    margin-top: 0;
+    width: inherit; 
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 99;
+	}
+
+	header .top-nav #logo {
+
+	}
+
+	.main .main-left ul li {
+    display: inline-block;
+    padding: 0; 
+    line-height: 5;
+    width: 90px;
+	}
+	.main .main-left ul li span {
+    width: 20%;
+    padding-bottom: 20%;
+	}
+	.main .main-left {
+     float: none; 
+     width: 100%; 
+	}
+	.main .main-right {
+     width: 100%; 
+     float: none; 
+     padding:0px;
+     margin: 3% 0;
+	}
+
+}
+
+
+@media screen and (max-width: 720px){
+	body{
+		font-size: 60%
+	}
+}
+li {
+	list-style: none;
+}
+.wrap{
+	width: 100%;
+	background: #FAFAFA;
+}
+
+header,html{
+	width: 100%;
+	font-family: "Microsoft YaHei"
+}
+.top-side{
+/*	width: 100%;*/
+    background: #fafafa;
+    padding: 0 4%;
+}
+.top-side p{
+	color:#56a087;
+	font-size: 0.875em;
+	line-height: 2.4;
+	white-space: nowrap;
+}
+.top-side .connection{
+	padding: 1% 0;
+	width: 100%;
+}
+.top-side .connection ul li img{
+    width:100%;
+}
+.top-side .connection ul{
+	width:100%;
+}
+.top-side .connection ul li{
+    width:3%;
+	float:right;
+	padding-right:3%;
+	padding-top: 0.3%
+}
+#weixin:hover ~ #weixin2{
+	display: block;
+}
+
+.top-side .connection #weixin2{
+	width:12%;
+	display: none;
+	position:absolute;
+	margin-left: -6.835%;
+    margin-top: -1%;
+}
+.clearfix:after{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.top-nav{
+	background: #29b078;
+    padding: 0 1.51%;
+}
+.top-nav #logo {
+
+    width: 15.117%;
+}
+.top-nav #menu {
+    float: right;
+    margin-right: 5%;
+    margin-top: 5%;
+    width: 3%;
+    cursor: pointer;
+}
+.banner{
+	width:100%;
+}
+.banner img{
+	width:100%;
+}
+
+.main{
+	max-width: 1000px;
+	width:100%;
+	margin:0 auto;
+	background-color: #FAFAFA;
+	padding-bottom: 10%
+}
+
+.page{
+	padding: 2% 0;
+}
+.page a{
+	text-decoration: none;
+	color:black;
+}
+.page span{
+	color:#999;
+}
+
+.main-left{
+    box-shadow: 1px 1px 1px rgba(152,24,64,0.5);
+	float:left;
+	width:22%;
+	border-radius: 0.5em;
+	background: #fff;
+}
+
+.main-left  h1{
+	font-size: 1.3em;
+	line-height: 3	;
+	border-bottom: 1px solid #EAEAEA;
+	text-align: center;
+}
+.main-left ul {
+	width:100%;
+}
+.main-left ul li span{
+    content: "";
+    display: inline-block;
+    width: 6%;
+    padding-bottom: 6%;
+    border: 1px solid orange;
+    border-radius: 50%;
+}
+.main-left ul li{
+	padding:10% 0 10% 30%;
+	color:#999;
+	cursor:pointer;
+}
+.main-left ul li:hover{
+	color:orange;
+}
+.main-right {
+    padding: 0 4%;
+    width: 67%;
+    float: right;
+    box-shadow: 1px 1px 1px rgba(152,24,64,0.5);
+    border-radius: 0.5em;
+    background-color: #fff;
+}
+.main-right p{
+	color:#999;
+	text-indent: 2em;
+	line-height: 2;
+}
+.main-right .introduction p{
+	padding:3% 0;
+}
+.main-right img{
+	float:left;
+	margin: 8%;
+}
+.main-right .brief {
+
+}
+.main-right .brief p{	
+	padding: 2% 0;
+}
+
+footer{
+	background-color: #26A26F;
+}
+.footer{
+	max-width: 800px;
+	width:100%;
+	margin:0 auto;
+	color:#fff;
+}
+.footer-top{
+	width: 100%;
+}
+.footer-top .contact{
+	padding-top:4%;
+	float:left;
+}
+.footer-top .contact h1{
+	font-size: 1.3em;
+    font-weight: normal;
+}
+.footer-top .contact a{
+	text-decoration: none;
+	color:#fff;
+	font-size: 0.7em;
+}
+.footer-top .contact a:hover{
+	text-decoration: underline;
+}
+.footer-top .contact p{
+	padding-top:10%;
+}
+.footer-top .ourWeixin{
+	float:right;
+}
+/*.footer-top .ourWeb{
+	text-align: center;
+}*/
+.copyright{
+	font-size: 0.7em;
+	line-height: 3;
+	border-top: 1px solid #999;
+	color:#fff;
+	text-align: center;
+}
+.active{
+	background:orange;
+}
+.active1{
+	background:orange;
+}
+
+#top-list{
+	-webkit-transition:all 0.6s ease-out;
+	-moz-transition:all 0.6s ease-out;
+	-ms-transition:all 0.6s ease-out;
+	-o-transition:all 0.6s ease-out;
+	transition:all 0.6s ease-out;
+	position: absolute;
+    width: 100%;
+	z-index:10;
+}
+#top-list #main-nav{
+	background:rgba(52,73,94,0.8);
+	position:absolute;
+	width:100%;
+}
+#top-list ul li{
+	text-align: center;
+	font-size: 0.875em;
+	line-height:2.5; 
+	
+}
+#top-list ul li a{
+	text-decoration: none;
+	color:#fff;
+}
+#top-list ul li:hover{
+	background: #29B078;
+}
+#top-list ul {
+	padding:2% 0;
+}
+.active-list{
+	-webkit-transform:scaleY(1);
+	-moz-transform:scaleY(1);
+	-ms-transform:scaleY(1);
+	-o-transform:scaleY(1);
+	transform:scaleY(1);
+}
+.notActive{
+	-webkit-transform:scaleY(0);
+	-moz-transform:scaleY(0);
+	-ms-transform:scaleY(0);
+	-o-transform:scaleY(0);
+	transform:scaleY(0);
+}
+
+
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<header>
+			<div class="top-side">
+				<div class="connection clearfix">
+					<ul>
+						<li><img src="task7Images/weibo.png" alt=""></li>
+						<li><img id="weixin" src="task7Images/weixin.png" alt=""><img id="weixin2" src="task7Images/code2.png" alt=""></li>
+						<li><img src="task7Images/qq.png" alt=""></li><p class="number">咨询电话：010-88888888</p>
+					</ul>
+				</div>	
+			</div>
+			<div class="top-nav clearfix">
+				<img src="task7Images/logo.png" alt="" id="logo">
+				<img src="task7Images/menu.png" alt=""  id="menu">
+			</div>
+			<div id="top-list" class="notActive">
+				<ul id="main-nav">
+					<li><a href="">首页</a></li>
+					<li><a href="">入学</a></li>
+					<li><a href="">职业</a></li>
+					<li><a href="">求职</a></li>
+					<li><a href="">关于</a></li>
+				</ul>
+			</div>
+			<div class="banner">
+				<img src="task8Images/banner.jpg" alt="">
+			</div>
+		</header>
+		<div class="main clearfix">
+			<div class="page">
+				<a href="">首页</a>><span>合作企业</span>
+			</div>
+			<div class="main-left">
+				<h1>合作企业</h1>
+				<ul>
+					<li class="btn-left"><span class="btn-point"></span> 阿里巴巴</li>
+					<li class="btn-left"><span class="btn-point"></span> 腾讯视频</li>
+					<li class="btn-left"><span class="btn-point active1"></span> 土豆网</li>
+					<li class="btn-left"><span class="btn-point"></span> 优酷网</li>
+					<li class="btn-left"><span class="btn-point"></span> 淘宝网</li>
+					<li class="btn-left"><span class="btn-point"></span> 爱奇艺</li>
+					<li class="btn-left"><span class="btn-point"></span> LOL</li>
+					<li class="btn-left"><span class="btn-point"></span> 英雄联盟</li>
+					<li class="btn-left"><span class="btn-point"></span> 世界第一</li>
+					<li class="btn-left"><span class="btn-point"></span> 用不起类</li>
+				</ul>
+			</div>
+			<div class="main-right">
+            	<div class="brief clearfix">
+                	<img src="task8Images/tudou.png" class="companyLogo" alt="">
+		                <p>
+		                    土豆网公司成立于1998年11月，是目前中国最大的互联网综合服务提供商之一，也是中国服务用户最多的互联网企业之一。成立10多年以来，******一直秉承一切以用户价值为依归的经营理念，始终处于稳健、高速发展的状态。2004年6月16日，******公司在香港联交所主板公开上市（股票代号700）。
+		                </p>
+            	</div>
+	            <div class="introduction">
+	                <p>
+	                    土豆是中国最早和最具影响力的网络视频平台，是中国网络视频行业的领军品牌。其前身土豆网于2005年4月15日正式上线，是全球最早上线的视频网站之一。2014年1月，“土豆网”正式更名为“土豆”，标志着土豆进入品牌发展的新阶段。
+	                </p>
+	                <p>
+	                    “每个人都是生活的导演”是土豆从创立第一天始的价值观。土豆相信年轻人的想象力、创造力，相信土豆的平台能帮助年轻人创造出更多，更好的影像作品，来表达对自己、生活和这个时代的看法。同时，土豆提倡尊重“每个人”的个性，尊重每个人自主地选择自己的生活，成为自己成长的导演。
+	                </p>
+	                <p>
+	                    2012年3月12日，优酷股份有限公司(NYSE: YOKU) (“优酷”) 和土豆股份有限公司 (NASDAQ: TUDO) (“土豆”)共同宣布，优酷和土豆将以100%换股的方式合并。2012年8月20日，优酷土豆合并方案获双方股东大会高票批准通过，优酷土豆集团公司正式诞生。2013年4月，优酷土豆集团宣布进入“集团BU化”运营阶段，提出“优酷更优酷，土豆更土豆”的发展战略。
+	                </p>
+	                <p>
+	                    2013年2月，杨伟东成为土豆总裁，宣布打造土豆“成为中国年轻人最喜爱的视频网站”，并明确土豆“成为中国最具影响力的青年文化品牌”的愿景，确立了土豆“青春、个性、自主、有趣”的品牌定位，土豆全面进入2.0阶段。通过年轻化的内容、年轻化的产品技术和年轻化的UGC/PGC生态三个方面来全面推动土豆2.0战略。
+	                </p>
+	                <p>
+	                    2014年3月土豆推出“4+1”战略。其中“4”代表的是土豆在内容方面更专注动漫、音乐、韩国娱乐、时尚四个垂直文化领域。而“1”则代表土豆推出的“一个频道”战略，基于“频道主”和“订阅者”两个视角全方位架构跨屏和线上线下体验系统，并结合用户体验、商业模式、运营机制等环节，提出了5个“一”规划。
+	                </p>
+	                <p>
+	                    根据第三方调研公司艾瑞的数据，优酷土豆集团在PC端和移动端全平台各项数据持续占据视频行业绝对领先优势，截止2014年3月，土豆每月独立访问用户数量增长到2.43亿。 2013年土豆在移动端的增长也非常迅猛，2013年三季度，土豆移动端获得了高速增长，月均覆盖用户较当年3月增长11倍，平均增长率超过40%；月均视频播放量增长23倍，月平均增幅达60%。
+	                </p>
+            	</div>
+			</div>	
+		</div>
+		<footer>
+			<div class="footer">
+				<div class="footer-top clearfix">
+					<!-- <div class="ourWeb">
+						<h1>旗下网站</h1>
+						<p>
+						<a href="">草船云孵化器 </a>
+						<a href="">最强IT特训营</a>
+						<a href="">葡萄藤轻游戏 </a>
+						<a href="">桌游精灵</a>
+						</p>
+					</div> -->
+					<div class="contact">
+						<h1>知识——改变你我</h1>
+						<p><a href="">关于我们</a>&nbsp;|&nbsp;
+						<a href="">联系我们</a>&nbsp;|&nbsp;
+						<a href="">友情链接</a></p>
+					</div>
+					
+					<div class="ourWeixin">
+						<img src="task7Images/code2.png" alt="">
+					</div>
+				</div>	
+			</div>
+			<div class="copyright">
+				<p>Copyright © 2015 xxxxxx www.xxxxxx.com All Rights Reserved | 京ICP备xxxxxxxx号</p>
+			</div>
+		</footer>
+	</div>
+<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+var leftBtn = $('.btn-left');
+	leftPoint = $('.btn-point');
+
+function getIndex(){
+	leftBtn.mouseover(function(){
+		var i=$(this).index();
+		leftPoint.eq(i).addClass("active");
+	})
+	leftBtn.mouseout(function(){
+		var i=$(this).index();
+		leftPoint.eq(i).removeClass("active");
+	})
+}
+getIndex();
+
+var menu = document.getElementById("menu"),
+	topList = document.getElementById("top-list") ;
+var f = false;
+	menu.onclick=function(){
+		
+		if(f != true){
+			topList.setAttribute("class","active-list");
+			return f = true;
+		}else{
+			topList.setAttribute("class","notActive");
+			return f = false;
+		}
+	}
+
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,185 @@
+body{
+	font-family: "Microsoft YaHei";
+}
+ul,li {
+	list-style: none;
+}
+.www{
+	width:100%;
+}
+.banner{
+	width:100%;
+}
+.banner img{
+	width:100%;
+}
+.header-second {
+    background-color: #29b078;
+    margin: 0;
+    padding: 0;
+}
+.main-left{
+    box-shadow: 1px 1px 1px rgba(152,24,64,0.5);
+	float:left;
+	width:100%;
+	border-radius: 0.5em;
+	background: #fff;
+	    margin-bottom: 5%;
+}
+
+.main-left  h1{
+	font-size: 1.3em;
+	line-height: 3	;
+	border-bottom: 1px solid #EAEAEA;
+	text-align: center;
+}
+.main-left ul {
+	width:100%;
+}
+.main-left ul li span{
+    content: "";
+    display: inline-block;
+    width: 9%;
+    padding-bottom: 8%;
+    border: 1px solid orange;
+    border-radius: 50%;
+}
+.main-left ul li{
+	padding:10% 0 10% 14%;
+	color:#999;
+	cursor:pointer;
+}
+.main-left ul li:hover{
+	color:orange;
+}
+
+.main-right {
+    padding: 0 4%;
+    width: 100%;
+    float: right;
+    box-shadow: 1px 1px 1px rgba(152,24,64,0.5);
+    border-radius: 0.5em;
+    background-color: #fff;
+    margin-bottom: 10%;
+}
+.main-right p{
+	color:#999;
+	text-indent: 2em;
+	line-height: 2;
+}
+.main-right .introduction p{
+	padding:3% 0;
+}
+.main-right img{
+	float:left;
+	margin: 8%;
+}
+
+.main-right .brief p{	
+	padding: 2% 0;
+}
+.main-content{
+	background: #FAFAFA;
+}
+.page{
+	padding: 2% 0;
+}
+.page a{
+	text-decoration: none;
+	color:black;
+}
+.page span{
+	color:#999;
+}
+
+.header-top img{
+	margin-top: 20%;
+}
+.header-top p{
+	line-height: 3;
+}
+
+img#logo {
+    width: 25%;
+}
+img#menu {
+    margin-top: 70%;
+    cursor: pointer;
+}
+.introduction{
+	margin-bottom: 5%;
+}
+footer{
+	text-align: center;
+	color:#fff;
+}
+footer a{
+	color:#fff;
+
+}
+ul#main-nav {
+    position: absolute;
+    right: 0;
+    opacity: 0;
+    z-index: 0;
+    transition: all 1s;
+    font-size: 1.5em;
+    background:rgba(52,73,94,0.8);
+    border-radius: 4px;
+    padding: 1% 10%;
+    line-height: 2;
+}
+#main-nav li{
+	transition:all 1s;
+}
+ul#main-nav a{
+	color: #fff;
+}
+#main-nav li:hover {
+    transform: translateX(-20px);
+}
+.active > span{
+	background: orange;
+}
+
+
+@media screen and (min-width: 768px){
+	.header-second-xs{
+		display: none;
+	}
+
+}
+@media screen and (max-width: 768px){
+	.header-second-md{
+		display: none;
+	}
+	.header-second-xs{
+		display: block;
+	}
+	header img#logo {
+
+	}
+}
+
+.header-second-md a{
+	font-size: 1.5em;
+	line-height: 5;
+	display: inline-block;
+	text-align: center;
+	width:100%;
+	color:#fff;
+}
+.header-second-md{
+	height:115px;
+}
+.header-second-md a:hover{
+	text-decoration: none;
+	border-bottom: 10px solid #fff;
+}
+.myClick{
+	border-bottom: 10px solid #fff;
+}
+
+.clickPoint{
+	background: orange;
+}

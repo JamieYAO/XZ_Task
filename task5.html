@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<style type="text/css">
+	ul,li,table,th,td,div,a,img,p,h1,h2,h3,h4,*{
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+a {
+    text-decoration: none;
+    color: #29bde0;
+}
+img {
+    border: none;
+}
+
+li {
+    list-style:none;
+}
+
+body{
+	font-family: "Microsoft YaHei"
+}
+
+.wrap{
+	width:100%;
+	max-width: 640px;
+	margin:0 auto;
+	position:relative;
+	overflow: hidden;
+
+}
+#oWrap{
+	transition:all 1s ;	
+}
+.sidebar-more{
+	background: #fff;
+	width:78.125%;
+	position:absolute;
+	left:0;     /*      换位*/
+	font-size: 2.734vw;
+	z-index: -1;
+}
+.sidebar-more ul li{
+	padding:4% 7%;
+	border-bottom: 1px solid #d6d6d6;
+	overflow: hidden;
+}
+.sidebar-more ul li a{
+	padding-left:14%;
+	line-height: 1.499;
+}
+.left{
+	width:9%;
+	float:left;
+	padding-left:7%;
+}
+.right{
+	width:5.6%;
+	float:right;
+	padding-right:7%;
+}
+
+.header{
+	background: #29bde0;
+}
+#btn-more{
+	width:5.3125%;
+	padding: 6.25% 0 3.125% 3.125%;
+    cursor:pointer;
+    transition:all 1s;
+}
+#btn-more:hover{
+	opacity:0.5;
+}
+.main {
+	widows: 100%;
+	background: #f0f0f0;
+	padding:0 4.375% 9.375% ;
+}
+.main .title{
+	padding:5.46878% 0;	
+}
+.main .title h1{	
+	display:block;
+	border:1px solid #d6d6d6;
+	line-height: 3.59375;
+	text-align: center;
+	font-size: 3.1vw;
+	color:#9a9a9a;
+	background:#fff url(task5Images/arrow2.png) no-repeat 97.4% ;
+}
+
+.content {
+	background: #fff;
+	border:1px solid #d6d6d6;
+	text-align: center	;
+	position: relative;
+}
+.content h1{
+	font-size: 3.613vw;
+	line-height: 2.5135;
+	border-bottom: 1px solid #fbb435;
+	color:#fbb435;
+	margin-bottom: 4.6875%
+}
+.content span{
+	display: inline-block;
+	font-size: 3.32vw;
+	background: #69d1e9;
+	color:#fff;
+	width:78.633%;
+	line-height: 3.91;
+}
+.content p{
+	line-height: 3.478;
+	font-size: 2.246vw;
+	color:#787878;
+}
+.content img{
+	position: absolute;
+	width:5%;
+	right:1.72%;
+	top:50%;
+}
+
+.bottom-nav{
+	overflow: hidden;
+	padding:0 39.383% 1.5625%;
+}
+.bottom-nav a{
+	display: block;
+	border-radius: 50%;
+	float:left;
+	margin:0 4%;
+	background: #f0f0f0;
+	color: #f0f0f0;
+	padding:8%;
+}
+.bottom-nav a:first-child{
+	background: #69d1e9;
+}
+.sidebar-more ul li{
+	-webkit-transform:translateX(-78.125%);
+	transform:translateX(-78.125%);
+	opacity:0;
+    transition:all 1s;
+    -webkit-transition:all 1s;
+}
+
+</style>
+
+	<title>Task5</title>
+</head>
+<body>
+	<div class="wrap" >
+	    <div class="sidebar-more">
+	      <ul>
+	    	<li >
+	    		<img class="left" src="task5Images/sound.png" alt=""><a href="" >公告</a><img class="right" src="task5Images/arrow.png" alt="">
+	    	</li>
+	    	<li>
+	    		<img class="left" src="task5Images/set.png" alt=""><a href="" id="set">设置</a><img class="right" src="task5Images/arrow.png" alt="">
+	    	</li>
+	    	<li>
+	    		<img class="left" src="task5Images/help.png" alt=""><a href="" id="help">帮助</a><img class="right" src="task5Images/arrow.png" alt="">
+	    	</li>
+	    	<li>
+	    		<img class="left" src="task5Images/about.png" alt=""><a href="" id="about">关于</a><img class="right" src="task5Images/arrow.png" alt="">
+	    	</li>
+	      </ul>
+	    </div> 
+		<div id="oWrap">
+		 	<div class="header">
+				<div id="btn-more" alt="f">
+				<img  src="task5Images/more.png" alt="more">
+				</div>
+		 	</div>
+			<div class="main">
+				<div class="title">
+					<h1>上次游戏：捉鬼猜词版</h1>
+				</div>
+				<div class="content">
+					<h1>捉鬼游戏</h1>
+					<span>简化版</span>
+					<p>有1133个用户正在玩此款游戏</p>
+					<span>猜词版</span>
+					<img src="task5Images/next.png" alt="next">
+					<p>有1133个用户正在玩此款游戏</p>
+					
+					<span>白痴版</span>
+					<p>有1133个用户正在玩此款游戏</p>
+					<div class="bottom-nav">
+						<a href="" id=""></a>
+						<a href="" id=""></a>
+						<a href="" id=""></a>
+						<a href="" id=""></a>
+					</div>
+				</div>
+		    </div>	
+	    </div>
+    </div>
+<script type="text/javascript" >
+
+
+	function move(){
+		var me = this;
+var btnMore = document.getElementById("btn-more");
+var oWrap = document.getElementById("oWrap");
+var oLi = document.getElementsByTagName("li");
+var f = false;
+	btnMore.onclick= function(){
+		if(f!=true){
+			oWrap.style.transform="translateX(78.125%)";
+			for(var i = 0; i < oLi.length ; i++){
+				oLi[i].style.transform = "translateX(0)";
+				oLi[i].style.transitionDelay = i*i*0.05+"s";
+			    oLi[i].style.opacity = "1";}
+			return f = true;
+		}else{
+			oWrap.style.transform="translateX(0px)";
+			for(var i = 0; i < oLi.length ; i++){oLi[i].style.transform = "translateX(-78%)";
+			oLi[i].style.opacity = "0";}
+
+			return f = false;
+		}
+	
+    }
+};
+move();
+</script>
+</body>
+</html>

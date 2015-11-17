@@ -1,0 +1,32 @@
+max-width:640px;
+1em:16px;
+25 - > 3.9%
+35px ->5.468%
+50px -> 7.8125%
+header:80px;12.5%;5em;80
+
+header p £º
+color:#fff;
+font-size:1.875em;
+line-height:80/30px;
+
+home:
+left:20px;3.125%
+top:20px;
+
+ÓÎÏ·½á¹û£º
+font-size:30px;
+bottom:20px;
+
+logo:
+top:30px;
+
+logo-p:
+line-haight:44px;
+size:31px;
+color:#ffc865
+
+message:
+top:47px;
+line-height:40px;
+font-size:25;

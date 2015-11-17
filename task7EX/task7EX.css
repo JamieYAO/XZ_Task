@@ -1,0 +1,287 @@
+body{
+	width:100%;
+	font-family: "Microsoft YaHei";
+
+}
+li{
+	list-style: none;
+}
+.header-second{
+	background-color:#29b078;
+	margin:0;
+	padding:0;
+}
+.carousel,.carousel li,.carousel li img{
+	width:100%;
+	transition:all 1s ease-in-out;
+}
+.carousel li,.carousel ul{
+	padding:0;
+	margin:0;
+	list-style: none;
+}
+.carousel li{
+	width:25%;
+	float: left;
+
+}
+.carousel{
+	width: 100%
+}
+.carousel ul{
+	width:400%;
+	position:absolute;
+	left:0;
+
+}
+.carousel-content{
+	position: relative;
+	overflow: hidden;
+	padding-bottom:31%;
+}
+.carousel #prev{
+	width:10%;
+	position:absolute;
+	padding: 13.644% 0;
+	cursor:pointer;	
+	z-index: 2;
+}
+.carousel #next{
+	width:10%;
+	text-align: right;
+	position:absolute;
+	padding: 13.644% 0;
+	right:0;
+	cursor:pointer;
+	z-index: 2;
+}
+.conterl-point{
+	position:absolute;
+	width:50%;
+	left:50%;
+	margin-left:-3.32%;
+	margin-top:-3%;
+	z-index: 1;
+}
+.conterl-point li{
+	width: 3.9%;
+	padding-bottom: 3.5%;
+	border-radius:50%;
+	border:1px solid #fff;
+	float:left;	
+	margin-right: 1%;
+}
+.active{
+	background: #fff;
+}
+.circle{
+	cursor:pointer;
+}
+.nav ol{
+	padding:0;
+}
+.company a:hover{
+	box-shadow: 1px 1px 3px #999;
+}
+.jinhui{
+	padding-bottom: 100%;
+    width: 100%;
+    background-color: white;
+    background-image: url(../task7Images/jinhui.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-position: center;
+}
+.duomeidai {
+	padding-bottom: 100%;
+    width: 100%;
+    background-color: white;
+    background-image: url(../task7Images/duomeidai.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-position: center;
+}
+.lie51 {
+	padding-bottom: 100%;
+    width: 100%;
+    background-color: white;
+    background-image: url(../task7Images/51.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-position: center;
+}
+.weiying{
+	padding-bottom: 100%;
+    width: 100%;
+    background-color: white;
+    background-image: url(../task7Images/weiying.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-position: center;
+}
+.yiqing {
+	padding-bottom: 100%;
+    width: 100%;
+    background-color: white;
+    background-image: url(../task7Images/yiqing.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-position: center;
+}
+.main{
+	text-align: center;
+}
+.main h1{
+	margin:10%;
+}
+footer{
+	text-align: center;
+	color:#fff;
+}
+footer p{
+	color:#fff;
+}
+.studens li{
+    padding: 4% 4%;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px #999;
+	background-color:#fff;
+	margin-top: 4%;
+}
+.studens h4 {
+	line-height: 4;
+}
+.company{
+	margin-bottom: 5%
+}
+.main-top{
+	margin-top:18% ;
+}
+.header-top img{
+	margin-top: 20%;
+}
+.header-top p{
+	line-height: 3;
+}
+.skill-book p{
+	line-height: 3;
+}
+.book img{
+	padding-top: 5%;
+}
+.friend img{
+	padding-top: 2%;
+}
+.show-right p{
+	padding-top: 8%
+}
+img#menu {
+    margin-top: 70%;
+    cursor: pointer;
+}
+img#logo {
+    width:25%;
+}
+footer a{
+	color:#fff;
+}
+.clearfix1:after{
+	content:"";
+	display: block;
+	height: 0;
+	clear:both;
+	visibility: hidden;
+}
+ul#main-nav {
+    position: absolute;
+    right: 0;
+    opacity: 0;
+    z-index: 0;
+    transition: all 1s;
+    font-size: 1.5em;
+    background:rgba(52,73,94,0.8);
+    border-radius: 4px;
+    padding: 1% 10%;
+    line-height: 2;
+}
+#main-nav li{
+	transition:all 1s;
+}
+ul#main-nav a{
+	color: #fff;
+}
+#main-nav li:hover {
+    transform: translateX(-20px);
+}
+.header-second-md a{
+	font-size: 1.5em;
+	line-height: 5;
+	display: inline-block;
+	text-align: center;
+	width:100%;
+	color:#fff;
+}
+.header-second-md{
+	height:115px;
+}
+.header-second-md a:hover{
+	text-decoration: none;
+	border-bottom: 10px solid #fff;
+}
+.myClick{
+	border-bottom: 10px solid #fff;
+}
+
+.skill-book p{
+	padding-right:27px;
+	background: url(jiantou.png) no-repeat right center;
+	display: inline-block;
+
+}
+.skill-book span{
+	box-shadow: 1px 1px 1px rgba(154,24,64,0.8);
+	border-radius: 50%;
+	height:71px;
+	width:71px;
+	display: block;
+	line-height: 4.5;
+	float:left;
+	background-color:#fff;
+}
+.skill-book .col-md-3{
+	margin:30px  0;
+	padding:0;
+}
+.studens p{
+	color: #999;
+}
+
+P {
+	color: #999;
+}
+@media screen and (min-width: 768px){
+	.header-second-xs{
+		display: none;
+	}
+
+}
+@media screen and (max-width: 768px){
+	.header-second-md{
+		display: none;
+	}
+	.header-second-xs{
+		display: block;
+	}
+	header img#logo {
+
+	}
+}
+
+#next img {
+    width: 40%;
+    margin: 0% 24%;
+}
+#prev img {
+    width: 40%;
+    margin: 0% 24%;
+}

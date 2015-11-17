@@ -1,0 +1,8 @@
+w:640
+h:1136
+
+top h:90 
+       bc:#22292c
+
+content
+  bc:#68cdd5

@@ -1,0 +1,206 @@
+body{
+	font-family: "Microsoft YaHei";
+}
+ul,li {
+	list-style: none;
+}
+.www{
+	width:100%;
+}
+.header-second {
+    background-color: #29b078;
+    margin: 0;
+    padding: 0;
+}
+.header-top img{
+	margin-top: 20%;
+}
+.header-top p{
+	line-height: 3;
+}
+
+img#logo {
+    width:25%;
+}
+img#menu {
+    margin-top: 70%;
+    cursor: pointer;
+}
+footer{
+	text-align: center;
+	color:#fff;
+}
+footer a{
+	color:#fff;
+
+}
+ul#main-nav {
+    position: absolute;
+    right: 0;
+    opacity: 0;
+    z-index: 0;
+    transition: all 1s;
+    font-size: 1.5em;
+    background:rgba(52,73,94,0.8);
+    border-radius: 4px;
+    padding: 1% 10%;
+    line-height: 2;
+}
+#main-nav li{
+	transition:all 1s;
+}
+ul#main-nav a{
+	color: #fff;
+}
+#main-nav li:hover {
+    transform: translateX(-20px);
+}
+.main-content{
+	width:100%;
+	background: #fafafa;
+}
+.main-content a:hover{
+	text-decoration: none;
+	color:#fff;
+	background: rgba(0,0,0,0.9);
+}
+
+/*.car h1{
+	font-size: 1.35em;
+	padding:3% 0;
+	border-bottom: 1px solid #999;
+}*/
+ .car{
+	width:100;
+	border:1px solid #E0E0E0;
+	background: #fff;
+	border-radius: 3%; 
+    transition: 1s ;
+	backface-visibility: hidden;
+	margin-top: 12px;
+}
+ .car img{
+	float:left;
+}
+ .car .car-top{
+	padding:3%;
+}
+ .car .car-top h3{
+	font-size: 1em;
+	padding: 2% 0;
+}
+ .car .car-top p{
+	font-size: 0.9em
+}
+ .car .car-top h3,
+ .car .car-top p{
+	margin-left: 50%;
+}
+ .car span{
+	font-size: 0.825em;
+	
+}
+ .car table{
+	    border-collapse: collapse;
+	width:100%;
+	font-size: 0.825em;
+}
+ .car table span {
+    display: inline-block;
+    margin-right: 4%;
+    margin-left: 5%;
+}
+ .car table td{
+	border: 1px solid #edf1f2;
+	padding:3% 0;
+}
+ .car table .payMonth {
+    margin-left: 37%;
+}
+ .car table .pay{
+	text-align: center;
+}
+ .carBack{
+	-webkit-transition: 1s ;  
+    -moz-transition: 1s ;  
+    -ms-transition: 1s ;  
+    -o-transition: 1s ;  
+    transition: 1s ;
+	display: block;
+	transform: rotateY(180deg);
+	backface-visibility: hidden;
+	position: absolute;
+	background: rgba(0,0,0,0.9);
+	color: #fff;
+	padding: 25.5% 0;
+	text-align: center;
+	border-radius: 3%;
+	font-size: 20px;
+	opacity: 0;
+	margin-top: 12px;
+}
+.car-top p{
+	word-break:break-all;
+}
+
+.carMove:hover .car{
+	transform:rotateY(180deg);
+}
+.carMove:hover .carBack{
+	transform:rotateY(360deg);
+	opacity: 1;
+}
+
+h2{
+	border-bottom: 2px solid #999;
+	line-height: 2;
+}
+.page{
+	border-bottom: 1px solid #999;
+	font-size: 1.5em;
+	line-height: 2;
+}
+.main-top a{
+	line-height: 3;
+	color:#999;
+}
+
+@media screen and (min-width: 768px){
+	.header-second-xs{
+		display: none;
+	}
+
+}
+@media screen and (max-width: 768px){
+	 .carMove .carBack{
+	 	padding:19% 0;
+	 }
+	.header-second-md{
+		display: none;
+	}
+	.header-second-xs{
+		display: block;
+	}
+	header img#logo {
+
+	}
+}
+
+.header-second-md a{
+	font-size: 1.5em;
+	line-height: 5;
+	display: inline-block;
+	text-align: center;
+	width:100%;
+	color:#fff;
+}
+.header-second-md{
+	height:115px;
+}
+.header-second-md a:hover{
+	text-decoration: none;
+	border-bottom: 10px solid #fff;
+}
+.myClick{
+	border-bottom: 10px solid #fff;
+}
