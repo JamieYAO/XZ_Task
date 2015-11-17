@@ -1,5 +1,7 @@
 # XZ_Task
 ***
+##### 良好的开发习惯
+#### 写代码之前先分析、先写文档、先写注释、定义变量要求语义化......
 ## CSS
 
 - 1~3搭建基础环境，学会Nginx，WebStorm，Svn/git,linux Shell，dns/dnspod	
@@ -132,3 +134,35 @@
 - JS基本语法
 - ID和Class的区别
 - F12Console的用法，以及如何Debug程序。
+
+[轮播](http://jamieyao.github.io/XZ_Task/轮播/carousel.html)
+
+###### 成果
+- 实现图片轮播
+- 点击导航找到固定图片
+- 实现无限轮播
+
+###### 收获
+- 模块化写法
+- 熟悉Jquery语法
+- 了解轮播业务逻辑
+
+[懒加载-组件化](http://jamieyao.github.io/XZ_Task/ll/LazyLoad.html)
+
+###### 成果
+- 实现懒加载
+- 了解懒加载的原理
+- 明白懒加载的页面优化意义
+
+###### 收获
+- 组件化写法
+
+
+[简单抽奖轮盘](http://jamieyao.github.io/XZ_Task/myturn.html)
+
+###### 成果
+- 实现canvas绘画
+- 随机转动抽奖
+
+###### 收获
+- 了解canvas用法
