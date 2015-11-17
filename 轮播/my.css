@@ -1,0 +1,104 @@
+*{
+	margin:0;
+	padding:0;
+}
+.mod-carousel{
+	width:520px;
+	position: relative;
+	margin: 20px auto;
+}
+.mod-carousel ul,.mod-carousel li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.mod-carousel .content {
+	position: relative;
+	width:520px;
+	height:280px;
+	overflow: hidden;
+}
+.mod-carousel .content ul {
+	position:absolute;
+	left:0;
+	width: 2080px;
+}
+.mod-carousel .content li {
+	float: left;
+}
+.mod-carousel .content img {
+	width: 520px;
+	height: 280px;
+}
+.mod-carousel .nav {
+	position: absolute;
+	z-index:100;
+	right:10px;
+	bottom:10px;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 5px;
+}
+.mod-carousel .nav li {
+	float: left;
+}
+.mod-carousel .nav .circle{
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  margin: 4px 8px;
+}
+.mod-carousel .nav .circle.active{
+  background-color: #aaa;
+}
+.mod-carousel .button span{
+  position: absolute;
+  z-index: 100;
+  top: 103px;
+  display: inline-block;
+  width: 25px;
+  height: 45px;
+  /*background-image:url(http://kejian.jirengu.com/data/fe/%E8%AF%BE%E4%BB%B6/31-%E8%BD%AE%E6%92%AD/code/arrow.png) ;*/
+  background-color: rgba(0,0,0,0.8);
+  cursor: pointer;
+  color:#fff;
+}
+.mod-carousel .button .prev{
+    left:10px;
+}
+.mod-carousel .button .next{
+	right:10px;
+}
+.prev:after{
+	content:"";
+	position:absolute;
+	border:22px solid transparent;
+	border-right-color:#000;
+	z-index: 10;
+	left:-18px;
+}
+.prev:before{
+	content:"";
+	position:absolute;
+	left:-23px;
+	border:22px solid transparent;
+	border-right-color:#fff;
+	z-index: 10;
+}
+.next:after{
+	content:"";
+	position:absolute;
+	border:22px solid transparent;
+	border-left-color:#000;
+	z-index: 10;
+	left:-1px;
+}
+.next:before{
+	content:"";
+	position:absolute;
+	left:3px;
+	border:22px solid transparent;
+	border-left-color:#fff;
+	z-index: 10;
+}

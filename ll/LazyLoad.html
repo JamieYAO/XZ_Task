@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>懒加载</title>
+	<style type="text/css">
+	ul,li{
+      list-style:none;
+    }
+    .container{
+      width: 800px;
+      margin: 0 auto;
+      overflow: auto;
+    }
+    .container li{
+      float: left;
+      margin: 10px 10px;
+    }
+    .container li img{
+      width: 220px;
+      height: 400px;
+    }
+
+	</style>
+</head>
+<body>
+	<ul class="container">
+  <li><img src="./懒加载-组件通用化/man.jpg" data-src="./懒加载-组件通用化/man.jpg"></li>
+  <li><img src="./懒加载-组件通用化/man.jpg" data-src="./懒加载-组件通用化/man.jpg"></li>
+  <li><img src="./懒加载-组件通用化/man.jpg" data-src="./懒加载-组件通用化/man.jpg"></li>
+  <li><img src="./懒加载-组件通用化/man.jpg" data-src="./懒加载-组件通用化/man.jpg"></li>
+  <li><img src="./懒加载-组件通用化/man.jpg" data-src="./懒加载-组件通用化/man.jpg"></li>
+  <li><img src="./懒加载-组件通用化/man.jpg" data-src="./懒加载-组件通用化/man.jpg"></li>
+  <li><img src="./懒加载-组件通用化/man.jpg" data-src="./懒加载-组件通用化/man.jpg"></li>
+  <li><img src="./懒加载-组件通用化/man.jpg" data-src="./懒加载-组件通用化/man.jpg"></li>
+  <li><img src="./懒加载-组件通用化/man.jpg" data-src="./懒加载-组件通用化/man.jpg"></li>
+    <li><img src="./懒加载-组件通用化/man.jpg" data-src="./懒加载-组件通用化/man.jpg"></li>
+  <li><img src="./懒加载-组件通用化/man.jpg" data-src="./懒加载-组件通用化/man.jpg"></li>
+  <li><img src="./懒加载-组件通用化/man.jpg" data-src="./懒加载-组件通用化/man.jpg"></li>
+  <li><img src="./懒加载-组件通用化/blank.jpg" data-src="./懒加载-组件通用化/man.jpg"></li>
+  <li><img src="./懒加载-组件通用化/blank.jpg" data-src="./懒加载-组件通用化/man.jpg"></li>
+  <li><img src="./懒加载-组件通用化/blank.jpg" data-src="./懒加载-组件通用化/man.jpg"></li>
+  <li><img src="./懒加载-组件通用化/blank.jpg" data-src="./懒加载-组件通用化/man.jpg"></li>
+  <li><img src="./懒加载-组件通用化/blank.jpg" data-src="./懒加载-组件通用化/man.jpg"></li>
+  <li><img src="./懒加载-组件通用化/blank.jpg" data-src="./懒加载-组件通用化/man.jpg"></li>
+
+
+ <script type="text/javascript" src="./懒加载-组件通用化/jquery.js"></script>
+ <script type="text/javascript">
+
+function showImg($el){
+	$el.attr('src', $el.attr('data-src'));
+}
+
+var LazyLoad = {
+
+  one: function($selectors, callback){
+  	this._add($selectors,callback);
+  	this._init();
+  },
+
+  _queue: [],
+  _isBind: false,
+
+  _add: function($selectors,callback){
+  	var me = this;
+  	$selectors.each(function(){
+  		$cur = $(this);
+  		var o = {
+  			el: $cur,
+  			cb: callback
+  		};
+  		me._queue.push(o);
+  	});
+  },
+
+  _init: function(){
+  	if(!this._isBind){
+  		this._bind();
+  	}
+  	this._do();
+  },
+
+  _bind: function(){
+
+  	var me = this,
+  		timer = null,
+  		interval = 40;
+
+  	$(window).on('scroll',function(e){
+  		timer && clearTimeout( timer );
+  		timer = setTimeout( function(){
+  			me._do();
+  		},interval);
+  	});
+
+  	this._isBind = true;
+  },
+
+  _do:function(){
+  	var me = this;
+  	var arrTmp = [];
+  	for(var i=0;i<this._queue.length; i++){
+  		var item = this._queue[i];
+  		if(this._isShow(item.el)){
+  			item.cb(item.el);
+  		}else{
+  			arrTmp.push(item);
+  		}
+  }
+  this._queue = arrTmp;
+},
+
+  _isShow: function($el){
+  	var scrollH = $(document).scrollTop(),
+  		winH = $(window).height(),
+  		top = $el.offset().top;
+  		return (top < winH + scrollH) ? true : false;
+  }
+
+}
+
+var $imgs = $('img');
+
+LazyLoad.one($imgs,function($el){
+	setTimeout(function(){
+		showImg($el);
+	},2000)
+});
+
+
+
+
+
+ </script>
+</body>
+</html>
