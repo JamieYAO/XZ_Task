@@ -8,11 +8,11 @@
  
 ***
 
-[Task9](http://jamieyao.github.io/XZ_Task/task9.html) [Task9EX](http://jamieyao.github.io/XZ_Task/task9EX.html)~~~EX使用了bootstrap
+[Task9](http://jamieyao.github.io/XZ_Task/task9.html)    [Task9EX](http://jamieyao.github.io/XZ_Task/task9EX.html)   [EX使用了bootstrap]
 
-[Task8](http://jamieyao.github.io/XZ_Task/task8.html) [Task8EX](http://jamieyao.github.io/XZ_Task/task8EX.html)~~~EX使用了bootstrap
+[Task8](http://jamieyao.github.io/XZ_Task/task8.html)    [Task8EX](http://jamieyao.github.io/XZ_Task/task8EX.html)   [EX使用了bootstrap]
 
-[Task7](http://jamieyao.github.io/XZ_Task/task7.html) [Task7EX](http://jamieyao.github.io/XZ_Task/task7EX.html)~~~EX使用了bootstrap
+[Task7](http://jamieyao.github.io/XZ_Task/task7.html)    [Task7EX](http://jamieyao.github.io/XZ_Task/task7EX.html)   [EX使用了bootstrap]
 
 ####Task7 Task8 Task9 完成一个大型网站的三个页面
 ###### 收获
