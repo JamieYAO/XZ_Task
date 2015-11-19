@@ -2,6 +2,10 @@
 ***
 ##### 良好的开发习惯
 #### 写代码之前先分析、先写文档、先写注释、定义变量要求语义化......
+***
+[前天笔试题](http://jamieyao.github.io/XZ_Task/ooo.html)
+当时做的时候没做对。没有考虑太多就写了。。。
+今天用三种方法实现了下，点击Li的时候alert对应的index，用的闭包（考的应该是闭包的知识）、严格模式、Jquery。很基础的题目。
 ## CSS
 
 - 1~3搭建基础环境，学会Nginx，WebStorm，Svn/git,linux Shell，dns/dnspod	
