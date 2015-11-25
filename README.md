@@ -1,9 +1,9 @@
-# XZ_Task
+# my_work
 ***
 ##### 良好的开发习惯
 #### 写代码之前先分析、先写文档、先写注释、定义变量要求语义化......
 ***
-[前天笔试题](http://jamieyao.github.io/XZ_Task/ooo.html)
+[前天笔试题](http://jamieyao.github.io/my_work/ooo.html)
 当时做的时候没做对。没有考虑太多就写了。。。
 今天用三种方法实现了下，点击Li的时候alert对应的index，用的闭包（考的应该是闭包的知识）、严格模式、Jquery。很基础的题目。
 ## CSS
@@ -13,12 +13,11 @@
 - 7~9掌握常见的WEB布局和一些常见的CSS效果并且学会自适应和响应式，熟悉长度单位，以及更多的Html控件。使用less和Bootstrap
  
 ***
+[Task7](http://jamieyao.github.io/my_work/task7.html)    [Task7EX](http://jamieyao.github.io/my_work/task7EX.html)   [EX使用了bootstrap]
 
-[Task9](http://jamieyao.github.io/XZ_Task/task9.html)    [Task9EX](http://jamieyao.github.io/XZ_Task/task9EX.html)   [EX使用了bootstrap]
+[Task8](http://jamieyao.github.io/my_work/task8.html)    [Task8EX](http://jamieyao.github.io/my_work/task8EX.html)   [EX使用了bootstrap]
 
-[Task8](http://jamieyao.github.io/XZ_Task/task8.html)    [Task8EX](http://jamieyao.github.io/XZ_Task/task8EX.html)   [EX使用了bootstrap]
-
-[Task7](http://jamieyao.github.io/XZ_Task/task7.html)    [Task7EX](http://jamieyao.github.io/XZ_Task/task7EX.html)   [EX使用了bootstrap]
+[Task9](http://jamieyao.github.io/my_work/task9.html)    [Task9EX](http://jamieyao.github.io/my_work/task9EX.html)   [EX使用了bootstrap]
 
 ####Task7 Task8 Task9 完成一个大型网站的三个页面
 ###### 收获
@@ -35,7 +34,7 @@
 - 鼠标移到职位上会出现翻转效果
 - 兼容IE8以上各种浏览器， 不同分辨下不会出现各种横向滚动条和变形，支持自适应和响应式。
 
-[Task6](http://jamieyao.github.io/XZ_Task/task6.html)
+[Task6](http://jamieyao.github.io/my_work/task6.html)
 
 ####Task6 完成一个用雪碧图加载小图标，播放声音文件的手机网站
 ###### 收获
@@ -49,7 +48,7 @@
 - 支持手机自适应
 - 点击播放按钮，可以播放Mp3
 
-[Task5](http://jamieyao.github.io/XZ_Task/task5.html)
+[Task5](http://jamieyao.github.io/my_work/task5.html)
 
 ####Task5 完成一个手机网站常见的导航菜单
 ###### 收获
@@ -60,7 +59,7 @@
 - 点击左侧的菜单可以滑出导航菜单，再次点击可以关闭
 - 在页面底部引入JS文件
 
-[Task4](http://jamieyao.github.io/XZ_Task/task4.html)
+[Task4](http://jamieyao.github.io/my_work/task4.html)
 
 ####Task4 完成一个手机页面
 ###### 收获
@@ -73,7 +72,7 @@
 - 固定底部按钮的写法
 - 头部状态栏的制作     
 
-[Task3](http://jamieyao.github.io/XZ_Task/task3.html)
+[Task3](http://jamieyao.github.io/my_work/task3.html)
 
 ####Task3 完成手机主页页面
 ###### 收获
@@ -91,7 +90,7 @@
 - 通过云服务器能正常访问
 
 #####Task2
-[sinaapp](http://yao66.sinaapp.com)
+[sinaapp](http://yao66.sinaapp.com/cv/cv.html)
 
 ####Task2 完成代码上传
 ###### 收获
@@ -103,7 +102,7 @@
  - 域名的配置     
  - Dnspod的使用  
 
-[Task1](http://jamieyao.github.io/XZ_Task/task1.html)
+[Task1](http://jamieyao.github.io/my_work/task1.html)
 
 ####Task1 完成一个九宫格布局
 ###### 收获
@@ -120,12 +119,14 @@
 
 ##Javascript
 - 学会基本控件的操作，包括轮播图，弹框，下拉选择框，定时任务等。
+- 
+####以下目标还未实现
 - 学会和服务器端的交互，RestFul风格的接口，Json解析，跨域解决方案，常见的注册登录，列表等。
 - 学会使用AngularJS来和服务器端交互，Factory，Service，指令，过滤器等。
 - 学会自定义接口，RequireJS，GruntJS，富文本编辑器等。
 - 学会QQ登录，微信登录，WebSocket，Manifest，LocalStorage，Phonegap等
 
-[JSTask1](http://jamieyao.github.io/XZ_Task/JStask1.html)
+[JSTask1](http://jamieyao.github.io/my_work/JStask1.html)
 
 ###### 成果
 - 每格一秒变换一次颜色，每次只有一个格子随机变换，变换的颜色是红绿蓝三种随机的颜色
@@ -139,7 +140,7 @@
 - ID和Class的区别
 - F12Console的用法，以及如何Debug程序。
 
-[轮播](http://jamieyao.github.io/XZ_Task/轮播/carousel.html)
+[轮播](http://jamieyao.github.io/my_work/轮播/carousel.html)
 
 ###### 成果
 - 实现图片轮播
@@ -151,7 +152,7 @@
 - 熟悉Jquery语法
 - 了解轮播业务逻辑
 
-[懒加载-组件化](http://jamieyao.github.io/XZ_Task/ll/LazyLoad.html)
+[懒加载-组件化](http://jamieyao.github.io/my_work/ll/LazyLoad.html)
 
 ###### 成果
 - 实现懒加载
@@ -162,7 +163,7 @@
 - 组件化写法
 
 
-[简单抽奖轮盘](http://jamieyao.github.io/XZ_Task/myturn.html)
+[简单抽奖轮盘](http://jamieyao.github.io/my_work/myturn.html)
 
 ###### 成果
 - 实现canvas绘画
