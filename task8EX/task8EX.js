@@ -29,3 +29,10 @@ getIndex();
 			return f = false;
 		}
 	}
+
+	var leftUl= $('.row .main-left ul'),
+	leftNav = $('#main-left-nav');
+
+	leftNav.click(function(){
+		leftUl.fadeToggle('slow');
+	})

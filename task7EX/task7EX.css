@@ -272,8 +272,8 @@ P {
 	.header-second-xs{
 		display: block;
 	}
-	header img#logo {
-
+	.warp .skill-book p{
+		line-height: 5;
 	}
 }
 

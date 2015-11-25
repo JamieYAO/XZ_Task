@@ -4,7 +4,7 @@ body{
 ul,li {
 	list-style: none;
 }
-.www{
+.warp{
 	width:100%;
 }
 .header-second {
@@ -28,7 +28,6 @@ img#menu {
 }
 footer{
 	text-align: center;
-	color:#fff;
 }
 footer a{
 	color:#fff;
@@ -65,19 +64,14 @@ ul#main-nav a{
 	background: rgba(0,0,0,0.9);
 }
 
-/*.car h1{
-	font-size: 1.35em;
-	padding:3% 0;
-	border-bottom: 1px solid #999;
-}*/
  .car{
-	width:100;
+	width:100%;
 	border:1px solid #E0E0E0;
 	background: #fff;
 	border-radius: 3%; 
-    transition: 1s ;
-	backface-visibility: hidden;
+    transition:all 1s ;
 	margin-top: 12px;
+	opacity:1;
 }
  .car img{
 	float:left;
@@ -101,7 +95,7 @@ ul#main-nav a{
 	
 }
  .car table{
-	    border-collapse: collapse;
+	border-collapse: collapse;
 	width:100%;
 	font-size: 0.825em;
 }
@@ -120,19 +114,24 @@ ul#main-nav a{
  .car table .pay{
 	text-align: center;
 }
+.carMove{
+	width:100%;
+	position:relative;
+}
  .carBack{
 	-webkit-transition: 1s ;  
     -moz-transition: 1s ;  
     -ms-transition: 1s ;  
     -o-transition: 1s ;  
-    transition: 1s ;
-	display: block;
+    transition: all 1s ;
+/*	display: block;*/
 	transform: rotateY(180deg);
-	backface-visibility: hidden;
+/*	backface-visibility: hidden;*/
 	position: absolute;
-	background: rgba(0,0,0,0.9);
+	background: rgba(0,0,0,1);
 	color: #fff;
-	padding: 25.5% 0;
+/*	padding: 25.5% 0;*/
+	height:inherit;
 	text-align: center;
 	border-radius: 3%;
 	font-size: 20px;
@@ -143,13 +142,13 @@ ul#main-nav a{
 	word-break:break-all;
 }
 
-.carMove:hover .car{
+/*.carMove:hover .car{
 	transform:rotateY(180deg);
 }
 .carMove:hover .carBack{
 	transform:rotateY(360deg);
 	opacity: 1;
-}
+}*/
 
 h2{
 	border-bottom: 2px solid #999;
@@ -180,9 +179,6 @@ h2{
 	}
 	.header-second-xs{
 		display: block;
-	}
-	header img#logo {
-
 	}
 }
 

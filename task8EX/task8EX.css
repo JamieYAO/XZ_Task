@@ -4,7 +4,7 @@ body{
 ul,li {
 	list-style: none;
 }
-.www{
+.warp{
 	width:100%;
 }
 .banner{
@@ -24,7 +24,7 @@ ul,li {
 	width:100%;
 	border-radius: 0.5em;
 	background: #fff;
-	    margin-bottom: 5%;
+	margin-bottom: 5%;
 }
 
 .main-left  h1{
@@ -111,7 +111,6 @@ img#menu {
 }
 footer{
 	text-align: center;
-	color:#fff;
 }
 footer a{
 	color:#fff;
@@ -150,14 +149,28 @@ ul#main-nav a{
 
 }
 @media screen and (max-width: 768px){
+	.row .main-left{
+
+	}
+	.row .main-left ul{
+		margin:0;
+		padding:0;
+		display: none;
+	}
+	.row .main-left ul li{
+		text-align: center;
+		padding:2% 0;
+		border-bottom: 1px solid #EAEAEA;
+
+	}
+	.row .main-left ul li span{
+		display: none;
+	}
 	.header-second-md{
 		display: none;
 	}
 	.header-second-xs{
 		display: block;
-	}
-	header img#logo {
-
 	}
 }
 
